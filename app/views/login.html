@@ -1,0 +1,43 @@
+<div class="page-content scrollable">
+	<div class="col-xs-12 col-sm-12 col-md-6 dialog-area">
+		<form id="login-form" class="form-content" ng-controller="LoginController">
+			<div class="title-area col-xs-12 col-sm-12 col-md-12 large-title" translate>Login</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-10 z-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					<input class="form-control z-input" type="text" name="account" placeholder="{{'Username or Email'| translate }}" ng-model="login.account"/>
+				</div>
+				<div class="z-error">{{error.account}}</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-10 z-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+					<input class="form-control z-input" type="password" name="password" placeholder="{{'Password'| translate }}" ng-model="login.password"/>
+				</div>
+				<div class="z-error">{{error.password}}</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-12 z-group">
+				<div class="">
+					<div class="z-checkbox">
+						<input type="checkbox" name="remember-me" ng-model="login.remember">
+					</div>
+					<div class="z-label" translate>Remember Password</div>
+				</div>
+			</div>
+			
+			<div class="col-md-10 btn-holder">
+				<button type="submit" class="btn btn-primary" ng-click="submit()" translate>Login</button>
+			</div>
+				
+			<div class="col-md-10 forget-password">
+				<p><a href="#/forgetPassword" translate>Forgot your password?</a></p>
+				<p><span translate>New User?</span>&nbsp;<a href="#/signup" translate>Sign up now</a></p>
+			</div>
+		</form>
+	</div>
+	<!-- Inline template -->
+<!-- 	<script type="text/ng-template" id="dialog.html"></script> -->
+</div>

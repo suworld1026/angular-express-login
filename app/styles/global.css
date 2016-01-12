@@ -1,0 +1,64 @@
+.page-content{
+	min-height:400px;
+	margin-top:36px;
+}
+
+.dialog-area {
+	padding-top: 10px;
+}
+
+#login-form .btn-holder {
+	margin-top: 10px;
+}
+
+.form-content .btn-holder {
+	margin-top: 10px;
+}
+
+.title-area {
+	font-size: 24px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.z-group {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.z-checkbox {
+	float: left;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	width: 20px;
+	line-height: 20px;
+}
+
+.z-label {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.z-field {
+	padding-left: 0px;
+	padding-right: 15px;
+}
+
+/* normal input */
+.z-input {
+	max-width: 340px;
+}
+
+.z-error {
+	color: red;
+	font-size: 13px;
+	height: 18px;
+	line-height: 18px;
+}
+
+/* Global define start*/
+

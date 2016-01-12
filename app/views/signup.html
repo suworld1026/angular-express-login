@@ -1,0 +1,52 @@
+<div class="page-content scrollable">
+	<div class="col-xs-12 col-sm-12 col-md-6 dialog-area">
+		<form class="form-content" ng-controller="SignUpController">
+			<div class="title-area col-xs-12 col-sm-12 col-md-12 large-title" translate>Sign Up</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-10 z-group" name="username">
+				<div class="input-group">
+					<span class="input-group-addon">
+						<i class="glyphicon glyphicon-user"></i>
+					</span>
+					<input class="form-control" type="text" placeholder="{{'Username' | translate }}" ng-model="signup.username"/>
+				</div>
+				<div class="z-error">{{error.username}}</div>
+			</div>
+		
+			<div class="col-xs-12 col-sm-12 col-md-10 z-group" name="password">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+					<input class="form-control" type="password" placeholder="{{'Password' | translate }}" ng-model="signup.password"/>
+				</div>
+				<div class="z-error">{{error.password}}</div>
+			</div>
+		
+			<div class="col-xs-12 col-sm-12 col-md-10 z-group" name="email">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+					<input class="form-control" type="text" placeholder="{{'Email' | translate }}" ng-model="signup.email"/>
+				</div>
+				<div class="z-error">{{error.email}}</div>
+			</div>
+		
+			<div class="col-xs-12 col-sm-12 col-md-12 z-group" name="agreement">
+				<div class="input-group">
+					<div class="z-checkbox">
+						<input type="checkbox" name="agree-checkbox" ng-model="signup.agree">
+					</div>
+					<div class="z-label agree-term-label-area">
+						<span translate>Agree</span> <span>Westudents's</span> 
+						<a ng-click="openTermsPage()"><span translate>Terms of Use</span></a> 
+						<span translate>and</span> 
+						<a ng-click="openPrivacyPage()"><span translate>Privacy Policy</span></a>
+					</div>
+				</div>
+				<div class="z-error">{{error.agreement}}</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-10 btn-holder">
+				<button type="submit" name="signup" class="btn btn-primary" ng-click="signUp()" translate>Create Account</button>
+			</div>
+		</form>
+
+	</div>
+</div>

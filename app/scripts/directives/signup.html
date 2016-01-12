@@ -1,0 +1,43 @@
+<popup opt="opt">
+<div class="col-xs-12 col-sm-12 col-md-12 dialog-area">
+		<form>
+			<div class="col-xs-12 col-sm-12 col-md-12" translate>To save your plan, you need to sign Up</div>
+			<br>
+			<div class="col-xs-12 col-sm-12 col-md-9 z-group" style="margin-top:20px;">
+<!-- 				<div class="z-label"><span translate>Username</span>:</div> -->
+				<input class="form-control" type="text" placeholder="{{'Username' | translate }}" ng-model="data.username"/>
+				<div class="z-error">{{error.username}}</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-9 z-group">
+<!-- 				<div class="z-label"><span translate>Password</span>:</div> -->
+				<input class="form-control" type="password" placeholder="{{'Password' | translate }}" ng-model="data.password"/>
+				<div class="z-error">{{error.password}}</div>
+			</div>
+		
+			<div class="col-xs-12 col-sm-12 col-md-9 z-group">
+<!-- 				<div class="z-label"><span translate>Email</span>:</div> -->
+				<input class="form-control" type="text" placeholder="{{'Email' | translate }}" ng-model="data.email"/>
+				<div class="z-error">{{error.email}}</div>
+			</div>
+		
+			<div class="col-xs-12 col-sm-12 col-md-12 z-group" name="agreement">
+				<div class="input-group">
+					<div class="z-checkbox">
+						<input type="checkbox" name="agree-checkbox" ng-model="data.agree">
+					</div>
+					<div class="z-label agree-term-label-area">
+						<span translate>Agree</span> <span>Westudents's</span> 
+						<a ng-click="openTermsPage()"><span translate>Terms of Use</span></a> 
+						<span translate>and</span> 
+						<a ng-click="openPrivacyPage()"><span translate>Privacy Policy</span></a>
+					</div>
+				</div>
+				<div class="z-error">{{error.agreement}}</div>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-10 btn-holder">
+				<button type="submit" name="signup" class="btn btn-primary" ng-click="signUp()" translate>Create Account</button>
+			</div>
+		</form>
+</popup>
