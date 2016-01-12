@@ -1,9 +1,9 @@
 # angular-express-login
-Token based login solution for expressjs + angularjs. Modules for both expressjs side and angularjs side. 
+This is a sample Website for demostrate token based login solution for expressjs + angularjs. 
+modules are written for both server side (base on nodejs + expressjs) and client side (angularjs + bootstrap). 
 
-You must install following software to run this app.
-bower
-mongodb
+You must install nodejs, bower and mongodb before run this app.
+
 
 ## Usage
 
