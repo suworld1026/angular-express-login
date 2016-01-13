@@ -15,6 +15,8 @@ var cfg = require('../config');
 var TokenMgr = require('./token');
 var tm = TokenMgr();
 var DB = require('../db.js');
+var Validator = require('./validator');
+var v = Validator();
 
 module.exports = function(){
 	
@@ -56,10 +58,15 @@ module.exports = function(){
 	          'http://' + host + '/api/resetPassword?token=' + token + '\n\n' +
 	          'If you did not request this, please ignore this email and your password will remain unchanged.\n'
 	      }, function(err){
+			  
+			  if(err){
+				return console.log(err);
+			  }else{
 				var doc = null;
 				if(callback){
 					callback(err, doc);
 				}
+			  }
 	    });
 	}
 	

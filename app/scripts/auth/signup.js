@@ -80,11 +80,12 @@ angular.module('mainModule').controller('SignUpController', [ '$scope', '$rootSc
 						setErrorMessage(data.errors);
 					}else{
 						$rootScope.$broadcast("onUpdateHeader");
-						$location.path('dashboard');
-						if(data.token){
-							$ms.setSessionItem('token', data.token);
-							$ms.setSessionItem('user', data.decoded);
-						}
+						alert('signup success!');
+						// $location.path('dashboard');
+						// if(data.token){
+							// $ms.setSessionItem('token', data.token);
+							// $ms.setSessionItem('user', data.decoded);
+						// }
 					}
 			}).error(
 				function(data, status, headers, config) {

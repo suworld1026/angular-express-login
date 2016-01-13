@@ -4,7 +4,7 @@
 // License: MIT
 //------------------------------------------------------
 
-'use strict'
+'use strict';
 
 var http = require('http');
 var cfg = require('./config');
